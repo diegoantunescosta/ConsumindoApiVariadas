@@ -8,7 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
@@ -26,7 +25,7 @@
     <br>
 
     <div>
-      <img :src="image.url" width="500" height="500">
+      <img :src="image.url" width="400" height="500">
       </img>
 
     </div>
@@ -47,7 +46,7 @@
       methods: {
         async recarrega() {
           try {
-            axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY"
+            axios.defaults.headers.common['x-api-key'] = "c8858cf2-7e0b-4470-84af-727610cb8398"
 
             let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit: 1 } })
 
