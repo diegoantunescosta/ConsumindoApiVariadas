@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Estados Brasileiros</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <h1>Estados Brasileiros</h1>
+  <p></p>
+  <script>const p = document.querySelector("p")
+    axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados").then(response =>{
+       var estados = response.data; estados
+      .forEach(estado => { p.innerHTML += "Nome: " + estado["nome"] + "<br>" }); })
+      .catch(error => console.log(error))</script>
+</body>
+
+</html>
