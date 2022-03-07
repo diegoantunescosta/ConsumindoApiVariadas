@@ -6,3 +6,8 @@ div {
     text-align: center;
   }
 
+img {
+  border-radius: 20px;
+  max-width: 100%;
+  width: 500px;  // assume this is the default size
+}
