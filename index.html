@@ -51,7 +51,7 @@
           try {
             axios.defaults.headers.common['x-api-key'] = "c8858cf2-7e0b-4470-84af-727610cb8398"
 
-            let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit: 1 } })
+            let response = await axios.get('https://api.thecatapi.com/v1/images/search')
 
             this.image = response.data[0]
 
